@@ -1,0 +1,10 @@
+services:
+  php-fpm:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: i-trans-app
+    restart: unless-stopped
+    working_dir: /var/www/app
+    volumes:
+      - .:/var/www/app
