@@ -11,3 +11,6 @@ dump-autoload:
 
 test:
 	$(DC_EXEC) ./vendor/bin/phpunit
+
+integrations:
+	$(DC_EXEC) php integration/index.php
