@@ -15,3 +15,5 @@ Thumbs.db
 
 # PHP
 *.log
+
+.phpunit.result.cache

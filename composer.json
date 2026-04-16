@@ -4,7 +4,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ITransDocumentValidator\\": "/src"
+            "ITransDocumentValidator\\": "src/",
+            "ITransDocumentValidator\\Integration\\": "integration/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ITransDocumentValidator\\Tests\\": "tests/"
         }
     }
 }

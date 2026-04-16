@@ -14,7 +14,7 @@ final class DocumentValidationPipeline
     /**
      * @var DocumentValidationRuleInterface[]
      */
-    private array $rules;
+    private array $rules = [];
 
     public function pipe(DocumentValidationRuleInterface $rule): self
     {

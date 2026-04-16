@@ -12,11 +12,7 @@ class DocumentValidationResult
     protected bool $isValid = true;
 
     public function __construct(
-        protected string $documentId {
-            get {
-                return $this->documentId;
-            }
-        },
+        protected string $documentId,
         protected DocumentValidationErrorSet $errorSet,
     )
     {
@@ -40,5 +36,15 @@ class DocumentValidationResult
             fn (DocumentValidationError $validationError): string => $validationError->getMessage(),
             $this->errorSet->getErrors()
         );
+    }
+
+    public function getDocumentId(): string
+    {
+        return $this->documentId;
+    }
+
+    public function isValid(): bool
+    {
+        return $this->isValid;
     }
 }

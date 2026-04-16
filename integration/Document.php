@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace ITransDocumentValidator\Tests;
+namespace ITransDocumentValidator\Integration;
 
 use ITransDocumentValidator\Contracts\ValidatableDocumentInterface;
 
-readonly class TestDocument implements ValidatableDocumentInterface
+readonly class Document implements ValidatableDocumentInterface
 {
     public function __construct(
         private string $id,
         private string $content,
-        private array $metadata
+        private array $metaData
     )
     {
     }
@@ -28,6 +28,6 @@ readonly class TestDocument implements ValidatableDocumentInterface
 
     public function getMetaData(): array
     {
-        return $this->metadata;
+        return $this->metaData;
     }
 }

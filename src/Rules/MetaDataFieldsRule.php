@@ -23,7 +23,7 @@ class MetaDataFieldsRule implements DocumentValidationRuleInterface
         $fieldsMissing = [];
 
         foreach ($this->metaDataFields as $metaDataField) {
-            if (!array_key_exists($metaDataField, $this->metaDataFields)) {
+            if (!array_key_exists($metaDataField, $document->getMetaData())) {
                 $fieldsMissing[] = $metaDataField;
                 $valid = false;
             }

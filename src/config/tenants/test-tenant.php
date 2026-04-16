@@ -1,5 +1,5 @@
 <?php
 
 return [
-    \ITransDocumentValidator\Rules\Tenants\TestTenant\HasAuthorRule::class
+    new \ITransDocumentValidator\Rules\Tenants\TestTenant\HasAuthorRule(),
 ];
