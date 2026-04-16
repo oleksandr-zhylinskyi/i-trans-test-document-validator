@@ -11,10 +11,6 @@ Rules are kept intentionally thin. Heavier interfaces or abstract base classes w
 
 The interface surface may not be exhaustive, but it covers the current requirements. Callbacks were considered in a few places but left out as unnecessary complexity.
 
-## Tests
-
-Tests were generated with Claude Code and manually reviewed.
-
 ## Integration script
 
 A small integration script is available at `integration/index.php` to exercise the full validation flow end-to-end.
